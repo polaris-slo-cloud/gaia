@@ -1,0 +1,8 @@
+# $schema: https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: gpu-function
+runtime: python
+registry: index.docker.io/maxireis/
+namespace: default
+created: 2025-06-19T15:04:31.881751135Z

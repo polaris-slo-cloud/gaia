@@ -1,0 +1,16 @@
+kube-state-metrics:
+  metricLabelsAllowlist:
+    - pods=[*]
+    - deployments=[app.kubernetes.io/name,app.kubernetes.io/component,app.kubernetes.io/instance]
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
+grafana:
+  dashboards:
+    default:
+      nvidia-gpu:
+        gnetId: 12239
+        revision: 1
+        datasource: Prometheus
